@@ -13,7 +13,7 @@ namespace QL_Kho.PAL.User_control
 {
     public partial class UserControlDashboard : UserControl
     {
-        private string connectionString = "Data Source=QUANGDAT\\SQLEXPRESS;Initial Catalog=QL_Kho;Integrated Security=True";
+        private string connectionString = "Data Source=ADUMOIMOIMOI;Initial Catalog=QL_Kho;Integrated Security=True";
 
         public UserControlDashboard()
         {

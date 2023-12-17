@@ -93,8 +93,9 @@
             buttonCn1.Name = "buttonCn1";
             buttonCn1.Size = new Size(207, 53);
             buttonCn1.TabIndex = 0;
-            buttonCn1.Text = "Chức năng 1";
+            buttonCn1.Text = "Tìm kiếm sản phẩm";
             buttonCn1.UseVisualStyleBackColor = true;
+            buttonCn1.Click += buttonCn1_Click;
             // 
             // panel3
             // 
@@ -185,7 +186,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(54, 144);
+            label1.Location = new Point(66, 157);
             label1.Name = "label1";
             label1.Size = new Size(107, 19);
             label1.TabIndex = 1;
@@ -193,7 +194,7 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.Image = QL_Kho.Properties.Resources.management1;
+            pictureBox1.Image = Properties.Resources.management1;
             pictureBox1.Location = new Point(80, 38);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(93, 87);
@@ -273,7 +274,7 @@
             // pictureBox2
             // 
             pictureBox2.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            pictureBox2.Image = QL_Kho.Properties.Resources.graduated;
+            pictureBox2.Image = Properties.Resources.graduated;
             pictureBox2.Location = new Point(723, 0);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(60, 58);

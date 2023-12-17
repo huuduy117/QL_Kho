@@ -16,7 +16,7 @@ namespace QL_Kho.PAL.Forms
 {
     public partial class FormMain : Form
     {
-        SqlConnection conn = new SqlConnection("Data Source = QUANGDAT\\SQLEXPRESS; Initial Catalog = QL_Kho; Integrated Security = TRUE");
+        SqlConnection conn = new SqlConnection("Data Source = ADUMOIMOIMOI; Initial Catalog = QL_Kho; Integrated Security = TRUE");
         public string Username, Role;
 
         public FormMain()
@@ -110,6 +110,12 @@ namespace QL_Kho.PAL.Forms
         {
             UserControlAddSP addSP = new UserControlAddSP();
             addUserControl(addSP);
+        }
+
+        private void buttonCn1_Click(object sender, EventArgs e)
+        {
+            UserControlSearchSP searchSP = new UserControlSearchSP();
+            addUserControl(searchSP);
         }
     }
 }

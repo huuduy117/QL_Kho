@@ -16,7 +16,7 @@ namespace QL_Kho.PAL.Forms
 {
     public partial class FormForgotPass : Form
     {
-        private string sql = "Data Source = QUANGDAT\\SQLEXPRESS; Initial Catalog = QL_Kho; Integrated Security = TRUE";
+        private string sql = "Data Source = ADUMOIMOIMOI; Initial Catalog = QL_Kho; Integrated Security = TRUE";
         public FormForgotPass()
         {
             InitializeComponent();

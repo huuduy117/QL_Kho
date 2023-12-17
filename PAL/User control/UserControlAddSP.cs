@@ -13,7 +13,7 @@ namespace QL_Kho.PAL.User_control
 {
     public partial class UserControlAddSP : UserControl
     {
-        private string sql = "Data Source =QUANGDAT\\SQLEXPRESS; Initial Catalog = QL_Kho; Integrated Security = TRUE";
+        private string sql = "Data Source =ADUMOIMOIMOI; Initial Catalog = QL_Kho; Integrated Security = TRUE";
         public UserControlAddSP()
         {
             InitializeComponent();
@@ -81,16 +81,17 @@ namespace QL_Kho.PAL.User_control
                     {
                         connection.Open();
 
-                        string query = "INSERT INTO SanPham (MaSanPham,TenSanPham,MoTaSanPham, DanhMucSanPham,SoLuongToiThieu) " +
-                                       "VALUES (@MaSanPham, @TenSanPham, @MoTaSanPham, @DanhMucSanPham,@SoLuongToiThieu)";
+                        string query = "EXEC Them1SanPham @MaSanPham = @MaSP,@TenSanPham = @TenSP,@MoTaSanPham = @MoTa,@DanhMucSanPham = @DanhMuc,@SoLuongToiThieu = @SoLuongTT";
+                        //string query = "INSERT INTO SanPham (MaSanPham,TenSanPham,MoTaSanPham, DanhMucSanPham,SoLuongToiThieu) " +
+                        //               "VALUES (@MaSanPham, @TenSanPham, @MoTaSanPham, @DanhMucSanPham,@SoLuongToiThieu)";
 
                         using (SqlCommand command = new SqlCommand(query, connection))
                         {
-                            command.Parameters.AddWithValue("@MaSanPham", masanpham);
-                            command.Parameters.AddWithValue("@TenSanPham", tensanpham);
-                            command.Parameters.AddWithValue("@MoTaSanPham", mota);
-                            command.Parameters.AddWithValue("@DanhMucSanPham", danhmuc);
-                            command.Parameters.AddWithValue("@SoLuongToiThieu", sltoithieu);
+                            command.Parameters.AddWithValue("@MaSP", masanpham);
+                            command.Parameters.AddWithValue("@TenSP", tensanpham);
+                            command.Parameters.AddWithValue("@MoTa", mota);
+                            command.Parameters.AddWithValue("@DanhMuc", danhmuc);
+                            command.Parameters.AddWithValue("@SoLuongTT", sltoithieu);
                             command.ExecuteNonQuery();
                         }
                     }
