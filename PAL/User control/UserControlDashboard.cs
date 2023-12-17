@@ -37,21 +37,21 @@ namespace QL_Kho.PAL.User_control
                     using (SqlCommand command = new SqlCommand(countLopQuery, connection))
                     {
                         int sp = Convert.ToInt32(command.ExecuteScalar());
-                        labelsp.Text = $"Sản phẩm: {sp}";
+                        labelsp.Text = $"{sp}";
                     }
 
                     string countSinhVienQuery = "SELECT COUNT(*) FROM DonDatHang";
                     using (SqlCommand command = new SqlCommand(countSinhVienQuery, connection))
                     {
                         int siSo = Convert.ToInt32(command.ExecuteScalar());
-                        labelSiSo.Text = $"Đơn hàng: {siSo}";
+                        labelSiSo.Text = $"{siSo}";
                     }
 
                     string countMonHocQuery = "SELECT COUNT(*) FROM NhaCungCap";
                     using (SqlCommand command = new SqlCommand(countMonHocQuery, connection))
                     {
                         int soMonHoc = Convert.ToInt32(command.ExecuteScalar());
-                        labelMonHoc.Text = $"Nhà cung cấp: {soMonHoc}";
+                        labelMonHoc.Text = $"{soMonHoc}";
                     }
                 }
             }
