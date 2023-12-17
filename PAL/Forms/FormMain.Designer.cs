@@ -1,4 +1,4 @@
-﻿namespace DiemdanhSV.PAL.Forms
+﻿namespace QL_Kho.PAL.Forms
 {
     partial class FormMain
     {
@@ -154,8 +154,9 @@
             buttonCn2.Name = "buttonCn2";
             buttonCn2.Size = new Size(207, 53);
             buttonCn2.TabIndex = 0;
-            buttonCn2.Text = "Chức năng 2";
+            buttonCn2.Text = "Add Sản Phẩm ";
             buttonCn2.UseVisualStyleBackColor = true;
+            buttonCn2.Click += buttonCn2_Click;
             // 
             // buttonDashboard
             // 

@@ -10,13 +10,13 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
-using DiemdanhSV.PAL.User_control;
+using QL_Kho.PAL.User_control;
 
-namespace DiemdanhSV.PAL.Forms
+namespace QL_Kho.PAL.Forms
 {
     public partial class FormMain : Form
     {
-        SqlConnection conn = new SqlConnection("Data Source = ADUMOIMOIMOI; Initial Catalog = QL_Kho; Integrated Security = TRUE");
+        SqlConnection conn = new SqlConnection("Data Source = QUANGDAT\\SQLEXPRESS; Initial Catalog = QL_Kho; Integrated Security = TRUE");
         public string Username, Role;
 
         public FormMain()
@@ -79,11 +79,11 @@ namespace DiemdanhSV.PAL.Forms
             addUserControl(dshb);
         }
 
-       
+
 
         private void buttonReport_Click(object sender, EventArgs e)
         {
-            UserControlAddUser addUser = new UserControlAddUser();  
+            UserControlAddUser addUser = new UserControlAddUser();
             addUserControl(addUser);
         }
 
@@ -106,6 +106,10 @@ namespace DiemdanhSV.PAL.Forms
             userControl.BringToFront();
         }
 
-
+        private void buttonCn2_Click(object sender, EventArgs e)
+        {
+            UserControlAddSP addSP = new UserControlAddSP();
+            addUserControl(addSP);
+        }
     }
 }

@@ -1,4 +1,4 @@
-﻿namespace DiemdanhSV.PAL.Forms
+﻿namespace QL_Kho.PAL.Forms
 {
     partial class FormLogin
     {

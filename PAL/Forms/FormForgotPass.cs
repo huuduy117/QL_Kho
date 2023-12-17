@@ -12,11 +12,11 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
-namespace DiemdanhSV.PAL.Forms
+namespace QL_Kho.PAL.Forms
 {
     public partial class FormForgotPass : Form
     {
-        private string sql = "Data Source = ADUMOIMOIMOI; Initial Catalog = QL_Kho; Integrated Security = TRUE";
+        private string sql = "Data Source = QUANGDAT\\SQLEXPRESS; Initial Catalog = QL_Kho; Integrated Security = TRUE";
         public FormForgotPass()
         {
             InitializeComponent();

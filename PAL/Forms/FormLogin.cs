@@ -10,11 +10,11 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Runtime.CompilerServices;
 
-namespace DiemdanhSV.PAL.Forms
+namespace QL_Kho.PAL.Forms
 {
     public partial class FormLogin : Form
     {
-        SqlConnection conn = new SqlConnection("Data Source = ADUMOIMOIMOI; Initial Catalog = QL_Kho; Integrated Security = TRUE");
+        SqlConnection conn = new SqlConnection("Data Source = QUANGDAT\\SQLEXPRESS; Initial Catalog = QL_Kho; Integrated Security = TRUE");
         public FormLogin()
         {
             InitializeComponent();

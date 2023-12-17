@@ -1,4 +1,4 @@
-﻿namespace DiemdanhSV.PAL.User_control
+﻿namespace QL_Kho.PAL.User_control
 {
     partial class UserControlAddUser
     {
