@@ -142,8 +142,9 @@
             buttonCn3.Name = "buttonCn3";
             buttonCn3.Size = new Size(207, 53);
             buttonCn3.TabIndex = 0;
-            buttonCn3.Text = "Chức năng 3";
+            buttonCn3.Text = "Quản lý giao hàng";
             buttonCn3.UseVisualStyleBackColor = true;
+            buttonCn3.Click += buttonCn3_Click;
             // 
             // buttonCn2
             // 

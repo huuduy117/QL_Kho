@@ -117,5 +117,11 @@ namespace QL_Kho.PAL.Forms
             UserControlSearchSP searchSP = new UserControlSearchSP();
             addUserControl(searchSP);
         }
+
+        private void buttonCn3_Click(object sender, EventArgs e)
+        {
+            UserControlQLDonHang qlgh = new UserControlQLDonHang();
+            addUserControl(qlgh);
+        }
     }
 }
